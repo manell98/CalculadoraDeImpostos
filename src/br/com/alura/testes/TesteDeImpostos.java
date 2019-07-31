@@ -1,6 +1,7 @@
 package br.com.alura.testes;
 
 import br.com.alura.calcula.CalculadorDeImposto;
+import br.com.alura.impostos.ICCC;
 import br.com.alura.impostos.ICMS;
 import br.com.alura.impostos.ISS;
 import br.com.alura.impostos.Imposto;
@@ -12,6 +13,7 @@ public class TesteDeImpostos {
 		
 		Imposto icms = new ICMS();
 		Imposto iss = new ISS();
+		Imposto iccc = new ICCC();
 		
 		Orcamento orcamento = new Orcamento(500.0);
 		
@@ -19,6 +21,7 @@ public class TesteDeImpostos {
 		
 		calculador.realizaCalculo(orcamento, icms);
 		calculador.realizaCalculo(orcamento, iss);
+		calculador.realizaCalculo(orcamento, iccc);
 		
 	}
 	
