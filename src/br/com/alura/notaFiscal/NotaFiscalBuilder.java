@@ -26,7 +26,7 @@ public class NotaFiscalBuilder {
 		return this;
 	}
 	
-	public NotaFiscalBuilder comItem(ItemDaNota item) {
+	public NotaFiscalBuilder com(ItemDaNota item) {
 		todosItens.add(item);
 		valorBruto += item.getValor();
 		impostos += item.getValor() * 0.05;
